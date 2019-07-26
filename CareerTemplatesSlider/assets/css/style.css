@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+}
+
+.flexbox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.justify-content-center {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center
+}
+
+.our-team-list {
+    height: 100vh;
+    background-color: #F8F9FA;
+}
+
+.our-team-member {
+    width: 46%;
+    display: none;
+    margin-left: 27%;
+    padding-top:70px;
+    text-align: center;
+    cursor: pointer;
+    transition: .1s ease-out;
+    animation-name: movement;
+    animation-duration: 1s;
+}
+
+
+.our-team-member img {
+    width: 20%;
+    border-radius: 100%;
+}
+
+.our-team-member blockquote {
+    width: 80%;
+    text-align: center;
+    font-style: italic;
+    margin: 35px 60px;
+}
+
+.our-team-member blockquote p {
+    font-size: 1.2em;
+    font-weight: 300;
+    color: #7f848c;
+    margin-bottom: 15px;
+}
+
+.our-team-member blockquote span {
+    font-size: 1.2em;
+}
+
+.dots .navigation-button {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    outline: none;
+    padding: 4px;
+}
+
+.fa-circle {
+    font-size: 0.7em;
+    color: #999D9F;
+}
+
+.active-btn {
+    color: #1644ba!important;
+}
+
+
+.active {
+    display: block;
+}
+
+@keyframes movement {
+    from {
+        transform: translateX(360px);
+    }
+    to {
+        transform: translateX(0px)
+    }
+}
